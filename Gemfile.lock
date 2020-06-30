@@ -121,7 +121,7 @@ GEM
       webfinger (>= 1.0.1)
     public_suffix (3.1.1)
     puma (3.11.4)
-    rack (2.0.7)
+    rack (2.2.3)
     rack-oauth2 (1.10.0)
       activesupport
       attr_required
