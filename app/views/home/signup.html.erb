@@ -1,0 +1,31 @@
+<h1>SignUp</h1>
+<br/>
+<%= form_for :user, url: 'register', method: :post, local: true do |f| %>
+  <table>
+    <tbody>
+      <tr>
+        <td><%= f.label :firstname %></td>
+        <td><%= f.text_field :firstname, class: 'form-control' %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :lastname %></td>
+        <td><%= f.text_field :lastname, class: 'form-control' %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :email %></td>
+        <td><%= f.text_field :email, class: 'form-control' %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :username %></td>
+        <td><%= f.text_field :username, class: 'form-control' %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.submit 'Create account', class: 'btn bt-primary'%></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
